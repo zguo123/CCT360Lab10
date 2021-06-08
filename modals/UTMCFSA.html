@@ -1,0 +1,45 @@
+<!-- 
+  This file will NOT include a <head> tag because it is going to be included in the 
+  file `projects.html`. Since this is the case, we do not need to include meta or head information
+  such as the title for this page!
+
+  The reason this is not included directly in `projects.html` is tha would over clutter the code. 
+  No changes in opening and closing the modal, just a different way of organizing the content.
+  
+  This is perfectly VALID html. See here: 
+  https://stackoverflow.com/questions/17148357/including-external-html-file-to-another-html-file 
+ -->
+
+<div
+  class="modal fade bg-primary"
+  id="UTMCFSAModal"
+  tabindex="-1"
+  aria-labelledby="UTMCFSAModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+>
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="UTMCFSAModalLabel">
+          utmcfsa.org - <strong>Project Details</strong>
+        </h5>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

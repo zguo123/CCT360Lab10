@@ -1,0 +1,44 @@
+/* 
+
+CCT360 Project 2 Styles
+
+
+Copyright (c) 2021 Zhaoyu Guo. 
+
+*/
+
+/* Buttons */
+@import url(../css/componentStyles/buttons.css);
+
+/* Bootstrap overrides */
+@import url(../css/componentStyles/overrides.css);
+
+/* Badge */
+@import url(../css/componentStyles/badge.css);
+
+/* Card */
+@import url(../css/componentStyles/card.css);
+
+/* navigation */
+@import url(../css/componentStyles/navigation.css);
+
+/* Hero */
+@import url(../css/componentStyles/hero.css);
+
+/* Footer */
+@import url(../css/componentStyles/footer.css);
+
+/* custom and other styles */
+@import url(../css/componentStyles/misc.css);
+
+/* Progress bar */
+@import url(../css/componentStyles/progress.css);
+
+@import url(../css/componentStyles/carousel.css);
+
+/* Global overrides live here */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0f51a4;
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Styling -->
+    <!--Obtained from:  https://michalsnik.github.io/aos/ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>My Projects | Zhaoyu's Website</title>
+  </head>
+  <body class="d-flex flex-column h-100" id="projectsContainer">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">Zhaoyu Guo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto">
+              <li>
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="overview.html">Overview</a>
+              </li>
+              <li>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li><a class="nav-link" href="education.html">Education</a></li>
+              <li>
+                <a class="nav-link" href="process.html">Process</a>
+              </li>
+              <li class="ms-2">
+                <a href="contact.html" class="btn btn-nav btn-light w-100"
+                  >Contact me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="bg-primary text-white d-flex flex-column justify-content-center"
+      >
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-6 py-lg-5 py-0">
+              <span
+                class="badge bg-success fs-4 fw-bold text-uppercase"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                Featured Project
+              </span>
+              <h1
+                class="my-2 display-1 fw-bold"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
+                utmcfsa.org
+              </h1>
+              <h2
+                class="fw-light"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
+                Description here
+              </h2>
+              <a
+                class="btn btn-light btn-lg my-4 my-sm-2"
+                href="https://www.utmcfsa.org/"
+                target="_blank"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
+                View live website.
+              </a>
+              <button
+                class="btn btn-link text-white text-decoration-none btn-lg my-4"
+                data-bs-toggle="modal"
+                data-bs-target="#UTMCFSAModal"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
+                Learn more
+              </button>
+            </div>
+            <div
+              class="col-md-6"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
+              <img
+                src="assets/img/utmcfsa.png"
+                class="img-fluid"
+                alt="UTMCFSA's homepage"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main content -->
+    <main class="container my-5">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-7">
+          <h1
+            class="display-1 mt-2 mb-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            all projects.
+          </h1>
+        </div>
+        <div class="col-md-5">
+          <form
+            action=""
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          >
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+                onchange="search(event)"
+              />
+              <label for="floatingInput">Search</label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <section class="row mt-4 mb-5 g-4" id="projects">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+        >
+          <div class="card bg-primary text-white">
+            <img
+              src="assets/img/utmcfsa.png"
+              class="card-img-top"
+              alt="UTMCFSA's homepage"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card with stretched link</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#UTMCFSAModal"
+                class="btn btn-light stretched-link"
+              >
+                Go somewhere
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div
+            class="card bg-primary text-white"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1500"
+          >
+            <img
+              src="assets/img/utmcfsa.png"
+              class="card-img-top"
+              alt="UTMCFSA's homepage"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card with stretched link</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#UTMCFSAModal"
+                class="btn btn-light stretched-link"
+              >
+                Go somewhere
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section id="contact">
+        <div class="col-md-12">
+          <div class="card bg-primary text-white text-center p-5">
+            <div class="card-body">
+              <h1 class="display-2 fw-bold">Like what you see?</h1>
+              <h2>Contact me</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Source: 
+        https://stackoverflow.com/questions/676394/how-to-include-an-html-page-into-another-html-page-without-frame-iframe
+       -->
+      <section w3-include-html="modals/UTMCFSA.html"></section>
+    </main>
+
+    <!-- Sticky footer inspired from Sticky Footer Examples -->
+    <!-- https://getbootstrap.com/docs/5.0/examples/sticky-footer/ -->
+    <footer class="footer mt-auto text-white bg-primary">
+      <div class="container">
+        <div class="row gy-2">
+          <div class="col-lg-8">
+            <p class="m-0">Copyright &copy; 2021 Zhaoyu Guo.</p>
+          </div>
+          <!-- footer navigation -->
+          <div class="col-lg-4">
+            <nav class="navbar-footer">
+              <ul>
+                <li><a href="" class="text-white me-2">Footer</a></li>
+                <li><a href="" class="text-white me-2">Footer</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 
+            
+    Source: 
+    https://stackoverflow.com/questions/676394/how-to-include-an-html-page-into-another-html-page-without-frame-iframe
+    -->
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script type="text/javascript">
+      w3IncludeHTML();
+    </script>
+
+    <!-- Custom Js file -->
+    <script type="module" src="assets/js/main.js"></script>
+
+    <!-- AOS -->
+    <!--Obtained from:  https://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

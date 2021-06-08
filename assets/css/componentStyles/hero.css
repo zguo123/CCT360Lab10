@@ -1,0 +1,23 @@
+/* 
+
+CCT360 Project 2 - Styles/overrides for the heros  
+
+Copyright (c) 2021 Zhaoyu Guo. 
+
+*/
+
+/* General Styles */
+#hero {
+  margin-top: 4.55rem;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+/* specific styles */
+#home #hero {
+  height: 80vh;
+}
+
+#projects #hero {
+  height: 70vh;
+}

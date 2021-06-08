@@ -1,0 +1,16 @@
+/* 
+
+CCT360 Project 2 - Styles/overrides for card elements  
+
+Copyright (c) 2021 Zhaoyu Guo. 
+
+*/
+
+.card {
+  border-radius: 16px;
+}
+
+/* customize the border radius of the image card */
+.card .card-img-top {
+  border-radius: inherit;
+}

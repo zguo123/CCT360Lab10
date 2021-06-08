@@ -1,0 +1,23 @@
+/* 
+
+CCT360 Project 2 - Styles/overrides for all elements  
+
+Copyright (c) 2021 Zhaoyu Guo. 
+
+*/
+
+.bg-primary {
+  background-color: #0f51a4 !important;
+}
+
+.text-primary {
+  color: #0f51a4 !important;
+}
+
+.bg-secondary {
+  background-color: #3c9bdb !important;
+}
+
+.text-secondary {
+  color: #3c9bdb !important;
+}

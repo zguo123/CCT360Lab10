@@ -1,0 +1,29 @@
+/* 
+
+CCT360 Project 2 - Styles/overrides for the buttons 
+
+Copyright (c) 2021 Zhaoyu Guo. 
+
+*/
+
+.btn {
+  border-radius: 16px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #0f51a4 !important;
+}
+
+.btn-lg {
+  padding: 1rem 1.5rem;
+}
+
+.btn-nav {
+  border-radius: 10px;
+}
+
+.btn-light {
+  color: #0f51a4 !important;
+}
